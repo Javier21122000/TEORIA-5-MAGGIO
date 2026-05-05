@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Pagina di Form</title>
+</head>
+<body>
+    <header>
+<h1>FORM</h1>
+<nav>
+<ul>
+<li><a href="index.html">TABELLE</a></li>
+<li><a href="form.html"</li>FORM</a></li>
+<li><a href="multimedia.html">MULTIMEDIA</a></li>
+                <li><a href="layout.html" >Layout</a></li>
+
+
+
+</ul>
+
+</nav>
+
+
+
+    </header>
+
+
+    <form method="get" action="grazie.html">
+
+<!--Campi di input-->
+
+<h4>*=Campi Obbligatori</h4>
+
+<label for="name">NOME COMPLETO *</label>
+<input type="text" id="name" name="name" placeholder="Inserisci il nome completo" required />
+<label for="address"> INDIRIZZO *</label>
+<input type="text" id="address" name="address" placeholder="Inserisci l'indirizzo" />
+<label for="email">EMAIL *</label>
+<input type="email" id="email" name="email" placeholder="Inserisci una email valida" required />
+
+<br>
+<br>
+<br>
+
+<label for="username" >USERNAME *</label>
+<input type="text" id="username" name="username" placeholder="Scegli una username" required />
+<label for="password" >PASSWORD *</label>
+<input type="password" id="password" name="password" placeholder="Scegli una password" required/>
+<label for="joinDate">DATA DI ISCRIZIONE </label>
+<input type="date" id="joinDate" name="joinDate"/>
+<label for="courses">NUMERO CORSI</label>
+<input type="number" id="courses" name="courses" placeholder="Numero corsi" required min="1" max="5"/><br />
+<br />
+
+<!--Select-->
+
+
+<label for="frequency"><h4>Scegli la Frequenza</h4></label>
+<select id="frequency" name="frequency">
+<option value=""selected></option>
+<option value="FT"selected>Full time</option>
+<option value="PT"selected>Part Time</option>
+<option value="SR"selected>Serale</option>
+
+</select>
+
+<!--Textarea-->
+
+<label for="message" name="message"></label>
+<textarea id="message" name="message" placeholder="Inserisci qui il tuo messaggio" style="width: 600px;"></textarea>
+
+<!--Checkbox e radio button-->
+<h4>Scegli i linguaggi preferiti</h4>
+<input type="checkbox" id="html" name="html" value="html" />
+<label for="html" >HTML</label>
+<br>
+<input type="checkbox" id="html" name="html" value="html" />
+<label for="CSS" >CSS</label>
+<br>
+<input type="checkbox" id="html" name="html" value="html" />
+<label for="Javascript" >Javascript</label>
+<br>
+<input type="checkbox" id="html" name="html" value="html" />
+<label for="Java" >Java</label>
+<br>
+<input type="checkbox" id="html" name="html" value="html" />
+<label for="PHP" >PHP</label>
+<br>
+
+<!--Perche i radio button si selezionino univocamente devono avere lo stesso name-->
+<h4>Seleziona un tipo di corso</h4>
+<input type="radio" id="Fullstack" name="tipocorso" value="Fullstack">
+<label for="fullstack">Fullstack</label>
+<input type="radio" id="Front-End" name="tipocorso" value="Front-End">
+<label for="Front-End">Front-End</label>
+<input type="radio" id="Back-End" name="tipocorso" value="Back-End">
+<label for="Back-End">Back-End</label>
+
+<p>&nbsp;</p>
+
+
+<!--Button-->
+<button type="submit" id="sendForm">INVIA</button>
+<button type="reset" id="clearForm">CANCELLA</button>
+
+
+
+
+
+
+    </form>
+</body>
+</html>
